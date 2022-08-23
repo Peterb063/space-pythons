@@ -1,1 +1,58 @@
-(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ 
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git add .
+warning: CRLF will be replaced by LF in .2022-08-19-143028.term-0.term.
+The file will have its original line endings in your working directory
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ ag[K[Kgit ac[K[Kcommit -m 'Web chang[K[K[K[K[K[K[K[K[KFront end changes'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'de36e3cae8644752930153d2b1dcb074@bc2b0f7690e6.(none)')
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git config --global user.email "you@example.com"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khai[Kzibq[K[Kqbullah@gmail.com
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git config --global user.name "Your Name"[K[K[K[K[K[K[K[K[K[K[Khaziqrahat
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git config --global user.name haziqrahatemail haziqbullah@gmail.com[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pmmit -m 'Front end changes'add .[Kcommit -m 'Front end changes'
+[main 85b6a71] Front end changes
+ 34 files changed, 2499 insertions(+), 203 deletions(-)
+ create mode 100644 .2022-08-19-143028.term-0.term
+ create mode 100644 .README.md.upload/paste-0.12587936429060864
+ create mode 100644 .README.md.upload/paste-0.2263895094401398
+ create mode 100644 .README.md.upload/paste-0.3147693298166223
+ create mode 100644 .README.md.upload/paste-0.7073141051746408
+ create mode 100644 .README.md.upload/paste-0.8966851460131906
+ create mode 100644 .README.md.upload/paste-0.9092354371913163
+ create mode 100644 .term.term-0.term
+ create mode 100644 2022-08-19-143028.term
+ create mode 100644 app/.term.term-0.term
+ create mode 100644 app/static/images/8192.jpg
+ create mode 100644 app/static/images/UwU.jpg
+ create mode 100644 app/static/images1/Logo_sample_1.jpg
+ create mode 100644 app/static/images1/Sean.jpg
+ create mode 100644 app/static/images1/favicon.png
+ create mode 100644 app/static/images1/logo-2.jpg
+ create mode 100644 app/static/images1/logo-3.png
+ create mode 100644 app/static/images1/logos for SkinAI.zip
+ create mode 100644 app/static/images1/resized.png
+ create mode 100644 app/static/uploads/DALLE_2022-08-21_11.07.26_-_A_painting_in_the_form_of_Van_Gough_with_kids_playing_in_a_beautiful_meadow.jpg
+ create mode 100644 app/static/uploads/DALLE_2022-08-21_11.07.26_-_A_painting_in_the_form_of_Van_Gough_with_kids_playing_in_a_beautiful_meadow.png
+ create mode 100644 app/static/uploads/Screen_Shot_2022-08-22_at_5.36.08_PM.jpg
+ create mode 100644 app/static/uploads/Screen_Shot_2022-08-22_at_5.36.08_PM.png
+ create mode 100644 app/static/uploads/img.jpg
+ create mode 100644 app/static/uploads/img.png
+ create mode 100644 app/static/uploads/media_images_Bounding_Box_Debugger_Images_1_cc5d72d30959dc4483f4.jpg
+ create mode 100644 app/static/uploads/media_images_Bounding_Box_Debugger_Images_1_cc5d72d30959dc4483f4.png
+ create mode 100644 app/templates/2022-08-23-010305.html
+ create mode 100644 app/term.term
+ create mode 100644 term.term
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git push roi[K[K[Korigin head
+error: src refspec head does not match any
+[31merror: failed to push some refs to 'https://github.com/Peterb063/space-pythons'
+[m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git push origin head[1@i[1@f[1@ [1P[1P[1P[1@-[1@f[1@ 
+error: src refspec head does not match any
+[31merror: failed to push some refs to 'https://github.com/Peterb063/space-pythons'
+[m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ 
