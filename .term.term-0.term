@@ -55,4 +55,15 @@ error: src refspec head does not match any
 [m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git push origin head[1@i[1@f[1@ [1P[1P[1P[1@-[1@f[1@ 
 error: src refspec head does not match any
 [31merror: failed to push some refs to 'https://github.com/Peterb063/space-pythons'
-[m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ 
+[m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git push -f origin head[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit add .
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git add .push -f origin head[3P[C[C[C[C[C[C[C[C[C[C[Ccommit -m 'Front end changes'
+[main e26f715] Front end changes
+ 1 file changed, 58 insertions(+), 1 deletion(-)
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git commit -m 'Front end changes'add .[Kpush -f origin head[3P[C[C[C[C[C[C[C[C[C[C[Ccommit -m 'Front end changes'[13Ppush origin head
+error: src refspec head does not match any
+[31merror: failed to push some refs to 'https://github.com/Peterb063/space-pythons'
+[m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git push origin head[K[K[K[K[K[K[K[K[K[K[K-f originhea[K[K[K head
+error: src refspec head does not match any
+[31merror: failed to push some refs to 'https://github.com/Peterb063/space-pythons'
+[m(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ [K(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git config --global user.email "you@example.com"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit config --global user.email "you@example.com"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kwrite you [Kr emial here[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'bri[Kown.pete063@gmialc[K[K[K[Kail.com'[K[1Pbrown.pete063@gmail.com
+(base) ]0;~/skinAI/space-pythons[01;34m~/skinAI/space-pythons[00m$ git config --global user.name "Your Name"[K[K[K[K[K[K[K[K[K[K[Kgithub username[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K peterb[K[K[K[K[K[KPeterb-[K063

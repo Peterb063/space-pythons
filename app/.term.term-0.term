@@ -2314,4 +2314,4 @@ git     127.0.0.1 - - [23/Aug/2022 21:07:02] "GET /de36e3ca-e864-4752-93
 127.0.0.1 - - [23/Aug/2022 22:10:28] "GET /de36e3ca-e864-4752-9301-53d2b1dcb074/port/12345/static/images1/favicon.png HTTP/1.1" 200 -
 (base) ]0;~/skinAI/space-pythons/app[01;34m~/skinAI/space-pythons/app[00m$ reset
 c[?1000l[?25h(base) ]0;~/skinAI/space-pythons/app[01;34m~/skinAI/space-pythons/app[00m$ git add .
-(base) ]0;~/skinAI/space-pythons/app[01;34m~/skinAI/space-pythons/app[00m$ 
+(base) ]0;~/skinAI/space-pythons/app[01;34m~/skinAI/space-pythons/app[00m$ [K(base) ]0;~/skinAI/space-pythons/app[01;34m~/skinAI/space-pythons/app[00m$ 
