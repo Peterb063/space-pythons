@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="it">
+  <meta name="keywords" content="AI, Skin Condition Detector, AI Project, Deep Learning">
+
+  <meta name="author" content="">
+
+  <title>SkinAI</title>
+  <link rel="icon" href="{{ url_for('static', filename='images1/favicon.png')}}"width="10" height="5" alt="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/plugins/fontawesome/css/all.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <style>
+    .navbar{
+      background:transparent !importaint;
+      transition:0.75s ease
+    }
+    .navbar.scrolled{
+      background:#38502d !importaint;
+    }
+    
+.card{
+background-color:#f2fcf4
+}
+  /* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+content: '';
+position: absolute;
+width: 3px;
+background-color: #38502d;
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+position: relative;
+background-color: inherit;
+width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+content: '';
+position: absolute;
+width: 25px;
+height: 25px;
+right: -11px;
+background-color: #698c62;
+top: 15px;
+border-radius: 50%;
+z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+padding: 0px 40px 20px 0px;
+left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+padding: 0px 0px 20px 40px;
+left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+content: " ";
+position: absolute;
+top: 18px;
+z-index: 1;
+right: 30px;
+border: medium solid white;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+content: " ";
+position: absolute;
+top: 18px;
+z-index: 1;
+left: 30px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+/* Place the timelime to the left */
+.main-timeline-2::after {
+left: 31px;
+}
+
+/* Full-width containers */
+.timeline-2 {
+width: 100%;
+padding-left: 70px;
+padding-right: 25px;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.timeline-2::before {
+left: 60px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+
+/* Make sure all circles are at the same spot */
+.left-2::after,
+.right-2::after {
+left: 18px;
+}
+
+.left-2::before {
+right: auto;
+}
+
+/* Make all right containers behave like the left ones */
+.right-2 {
+left: 0%;
+}
+}
+  </style>
+
+</head>
+
+
+<body id="top-header">
+
+
+<!-- LOADER TEMPLATE -->
+<div id="page-loader">
+    <div class="loader-icon fa fa-spin colored-border"></div>
+</div>
+<!-- /LOADER TEMPLATE -->
+
+     <!-- NAVBAR
+    ================================================= -->
+<style>
+  .navbar{
+
+  }
+  </style>
+    <nav class="navbar navbar.scrolled navbar-expand-lg fixed-top site-navigation main-nav navbar-togglable">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images1/favicon.png')}}" width="120" height="70" alt="">
+              </a>
+            <a class="navbar-brand" href="https://cocalc14.ai-camp.dev/de36e3ca-e864-4752-9301-53d2b1dcb074/port/12345/#">
+                <h2><FONT COLOR="white"> SkinAI
+                              </FONT></h2>
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Links -->
+                <ul class="navbar-nav row">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#home" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <FONT COLOR=" #90EE90"> LINKS
+                              </FONT> 
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarWelcome">
+                                 <a class="dropdown-item " target="_blank" href="https://github.com/Peterb063/space-pythons">
+                                    Github Repo
+                                </a>
+                               <a class="dropdown-item "></a>
+                          </div>
+
+                          </li>
+                        <li class="nav-item ">
+                            <a href="#home" class="nav-link">
+                              <FONT COLOR=" #90EE90"> HOME
+                              </FONT>
+
+                            </a>
+                        </li>
+
+                       <li class="nav-item ">
+                            <a href="#our_journey" class="nav-link">
+                              <FONT COLOR=" #90EE90"> OUR JOURNEY
+                              </FONT>
+
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="#meet_the_team" class="nav-link" > 
+                               <FONT COLOR=" #90EE90"> THE TEAM
+                              </FONT> 
+                            </a>
+                        </li>
+
+                    </ul>
+                <ul class="ml-lg-auto list-unstyled m-0 nav-btn">
+                    <li><a href="#"   target="_blank" class="btn btn-green btn-circled btn-two" > <i class="fas fa-camera pr-2 left" aria-hidden="true"></i>Upload an Image </a> </li> 
+                </ul>
+            </div> <!-- / .navbar-collapse -->
+        </div> <!-- / .Container -->
+    </nav>
+    <a id="home"></a>
+ <!-- HERO
+    ================================================== -->
+    <section class="banner-area py-5" id="banner-4" style="background-image: url(https://tnsskinlab.com/wp-content/uploads/2021/01/well-kept-portrait-beautiful-young-woman-white-studio-background-concept-cosmetics-makeup-natural-eco-treatment-skin-care-shiny-healthy-look-fashion-healthcare-copyspace-1024x705.jpg);">
+       <div class="overlay feature-overlay"></div>
+        <!-- Content -->
+        <div class="container">
+            <div class="row  align-items-center justify-content-center">
+                <div class="col-md-12 col-lg-9">
+                   <div class="banner-content2 text-center style-2">
+                        <!-- Heading -->
+                        <h1 class="display-4 mb-4 ">
+                            SkinAI
+                        </h1>
+
+                        <!-- Subheading -->
+                       <p class="lead mb-5 pr-0" style="font-size:20px;font-family:serif"> <i>
+An AI powered application that detects various skin related conditions</i>
+                        </p>
+
+                        <!-- Button -->
+                            <a class="mb-0" id='seefood_button'>
+                                <form id='seefood_form' method=post enctype=multipart/form-data>
+                                    <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
+                                </form>
+                                <button href="#" target="_blank" class="btn btn-white btn-circled btn-text">
+                                    <i class="fas fa-camera pr-2 left" aria-hidden="true"></i>  Upload image
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+         <!-- / .container -->
+
+      </section>
+
+    <section>
+          <div class = "row no-gutters">
+              <div class = "col">
+                  <img src="{{ url_for('static', filename='images1/Acne.png')}}" class="img-fluid"/>
+              </div>
+              <div class = "col">
+                <img src="{{ url_for('static', filename='images1/Blister.png')}}" class="img-fluid"/>
+            </div>
+            <div class = "col">
+                <img src="{{ url_for('static', filename='images1/Vitilago.png')}}" class="img-fluid"/>
+            </div>
+            <div class = "col">
+                <img src="{{ url_for('static', filename='images1/Melanoma.png')}}" class="img-fluid"/>
+            </div>
+          </div>
+    </section>
+    <a id="demo"></a>
+    <section class="section">
+        <div class="row align-items-center justify-content-center">
+            <div class="col text-center">
+               <!-- <div class="section-heading">
+<h1 class="section-title mb-4 " >
+                    Watch The Demo
+                </h1>
+                </div>
+<iframe src="https://www.youtube.com/embed/xZYPPYvJsv4?modestbranding=1&controls=1&showinfo=0&rel=0&enablejsapi=1&version=3&mute=0&loop=0&playerapiid=iframe_YTP_1564558236662&origin=*&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1&playlist=xZYPPYvJsv4" class="youtube-video-iframe"></iframe> -->
+                <p class="small-text top-margin">  Our computer vision model has been trained to identify several different types of skin conditions. Currently it can detect Acne, Blisters, Vitilago and Melanoma very well. </p>
+            </div>
+        </div>
+    </section>
+  
+   <a id="our_journey"></a>
+  <section style="background-color: #9dcbc6;">
+  <div class="container py-5">
+    <h1 style="text-align:center">
+
+
+      <FONT COLOR="#174b3e"> Our Journey </FONT>
+
+
+    </h1>
+    <br/><br/>
+    <div class="main-timeline-2">
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="https://media.istockphoto.com/photos/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-picture-id1344939844?b=1&k=20&m=1344939844&s=170667a&w=0&h=f0QIXpR3sMZmWGoq7oSCvBMhYVFyg72kiLQRAvnci-g=" class="card-img-top"
+            alt="Responsive image">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">An Idea in the Making</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> August, 15 </p>
+            <p class="mb-0">  SkinAI started off as a simple idea to identify cysts on one's skin through uploading images. This was our choice since it combined computer vision with a simple product that we could make in a short period of time. </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 right-2">
+        <div class="card">
+          <img src="https://cdn.discordapp.com/attachments/1009221569836503183/1012477309153972344/unknown.png" class="card-img-top"
+            alt="Responsive image">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Collecting Data</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> August, 16</p>
+            <p class="mb-0">After we chose the final product, we started on collecting data for the model. Each class of skin condition we made had to have about 100 unique images. Then we uploaded them all to Roboflow in order for our team members to annotate and draw bounding boxes on each image for the AI model to learn from. Finally, in order to increase the final size of our data set, we decided to use Roboflow again,to augment each image with rotation, blur, and noise. </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="https://miro.medium.com/max/640/0*_UYcDncjSNi422NV.png" class="card-img-top"
+            alt="Responsive image">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Training the Model</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> August, 18</p>
+            <p class="mb-0">With our dataset complete, our team started to train the CV model with YOLOv7 which is a fast and accurate object detection software, however we still faced some difficulties. </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 right-2">
+        <div class="card">
+          <img src="https://i0.wp.com/metrology.news/wp-content/uploads/2021/06/Research-Collaboration-Improving-Computer-Vision-for-AI.png?resize=800%2C445&ssl=1" class="card-img-top"
+            alt="Responsive image">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4"> Improving the Model</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> August, 22</p>
+            <p class="mb-0">After our model finished training, the back-end team noticed the extremely low accuracy in detecting the correct skin condition. To try and fix this, they removed rashes for its similarity to certain acne, Ichthyosis because the model kept confusing it for healthy skin, and then added melanoma because we needed another class after removing two, moreover it looking very distinct.We also switched to Yolov5 for its quicker and better results for our purposes
+ </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-2 left-2">
+        <div class="card">
+          <img src="https://i.pcmag.com/imagery/articles/06DrNxjsSoacWIEUI35EF5U-2..v1569491152.jpg" class="card-img-top"
+            alt="Responsive image">
+          <div class="card-body p-4">
+            <h4 class="fw-bold mb-4">Creating the Website</h4>
+            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> August, 22</p>
+            <p class="mb-0">While the back-end team worked on the code, the front-end team worked on the UI. We used an emotion detector website as our template to work off of. We then worked on getting everything to fit the theme of our logo. Finally we got everything to look a bit more high quality by adding a fading navigation bar as well as adding a nice looking timeline. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="meet_the_team"></a>
+<section class="section section-padding" id="services-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center">
+                    <div class="section-heading">
+                        <!-- Heading -->
+                        <h2 class="section-title section-title-padding mb-2 text-white">
+                            Meet the Team
+                        </h2>
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
+                    <div class="web-service-block">
+                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/Fatima.jpg')}}">
+                        <h3>Fatima Aliyeva</h3>
+                        <p>Student at Landau High School</p>
+                        <p>Hopefully majors in Cybersecurity</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
+                    <div class="web-service-block">
+                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/Peter.jpg')}}">
+                        <h3>Peter Brown</h3>
+                        <p>Student at Vancouver iTech Preperatory</p>
+                        <p>Enjoys playing hockey, Valorant, and doing homework.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
+                    <div class="web-service-block">
+                        <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/Sean.jpg')}}">
+                        <h3>Sean Hwang</h3>
+                        <p>Student at The Hotchkiss School</p>
+                        <p>Chess, math, computer science, programming, coding, writing softwares, computer processing, computing, lol, tft, ping pong... </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-6 ">
+                    <div class="web-service-block">
+                        <img class="image-container img-fluid" src="https://i.pinimg.com/736x/92/39/4b/92394bcac94b9c0d6416ecf8c744d39f.jpg">
+                        <h3>Nitin Pramnath</h3>
+                        <p>Student at a High School</p>
+                        <p>Likes Machine learning and learning.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 ">
+                    <div class="web-service-block">
+                        <img class="image-container img-fluid" src="https://i.pinimg.com/originals/b3/d1/35/b3d135bcf65b8472e0021dda91083560.jpg">
+                        <h3>Ritivin Rejith</h3>
+                        <p>Student at Rancho San Joaquin Middle School</p>
+                        <p>Likes Computer vision and Programming</p>
+                    </div>
+                </div>
+            </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 text-center">
+                        <div class="section-heading">
+                            <!-- Heading -->
+                            <h2 class="section-title section-text">
+                                Our Intructor
+                            </h2>
+                        </div>
+                    </div>
+                </div> <!-- / .row -->
+            <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="web-service-block">
+                            <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/Haziq.jpeg')}}">
+                            <h3>Haziq Rahat</h3>
+                            <p>Grad student at UC, Riverside and current DSI at AI camp</p>
+                            <p>His interest areas include Data Science and Machine Learning with an emphasis on healthcare problems.</p>
+                        </div>
+                    </div>
+                   <!-- <div class="col-lg-4 col-sm-6 col-md-6"> 
+                        <div class="web-service-block">
+                            <img class="image-container img-fluid" src="{{ url_for('static', filename='images1/ying.jpeg')}}">
+                            <h3>Ying Jiang</h3>
+                            <p>Stanford Ph.D</p>
+                            <p>Ying is a Lead Data Scientist at Ericsson. She is passionate in education, data analysis, and continuous learning.</p>
+                        </div>
+                    </div>-->
+                </div>
+  </div>
+  </section>
+
+
+<a id="our_work"></a>
+ <!--<section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center">
+
+            </div>
+        </div>
+    </section>-->
+
+
+
+
+<!-- /.container -->
+    <!--  Page Scroll to Top  -->
+
+    <a class="scroll-to-top" href="#top-header">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+
+    <!--
+    Essential Scripts
+    =====================================-->
+    <!-- Main jQuery -->
+    <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/theme.js')}}"></script>
+    <script>
+        // added to get upload with a button working
+        document.getElementById('seefood_button').addEventListener('click', openDialog);
+
+        function openDialog() {
+            document.getElementById('seefood_input_field').click();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#spinner").bind("ajaxSend", function() {
+                $(this).show();
+            }).bind("ajaxStop", function() {
+                $(this).hide();
+            }).bind("ajaxError", function() {
+                $(this).hide();
+            });
+            // seefood_input_field
+            $('#seefood_button').click(function() {
+
+            });
+        });
+    </script>
+
+
+</body>
+</html>
