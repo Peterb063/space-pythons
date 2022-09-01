@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/ai-camp-logo-128x128.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='images1/favicon.png')}}"width="10" height="5" alt="">
     <meta name="description" content="">
 
-    <title>results</title>
+    <title>Results</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='plugins/fontawesome/css/all.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"> 
+    <style>
+    .navbar{
+      background:transparent !importaint;
+      transition:0.75s ease
+    }
+
+  </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top header-white main-nav navbar-togglable">
-        <div class="container">
-            <a class="navbar-brand" href="/#">
-                <img src="{{ url_for('static', filename='images1/ai camp logo1.svg')}}" width="55" height="55" alt="">
+    <nav class="navbar navbar.scrolled navbar-expand-lg fixed-top site-navigation main-nav navbar-togglable" >
+        <div class="container" >
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images1/favicon.png')}}" width="120" height="70" alt="">
               </a>
-            <a class="navbar-brand " href="/#">
-                <h3 class="colored-text">Emotion Detector</h3>
+            <a class="navbar-brand" href="https://cocalc14.ai-camp.dev/de36e3ca-e864-4752-9301-53d2b1dcb074/port/12345/#">
+                <h2><FONT COLOR="white"> SkinAI
+                              </FONT></h2>
             </a>
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,89 +41,99 @@
                 <!-- Links -->
                 <ul class="navbar-nav row">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle colored-text" href="#home" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Links
+                            <a class="nav-link dropdown-toggle" href="#home" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <FONT COLOR=" #90EE90"> LINKS
+                              </FONT>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarWelcome">
-                                 <a class="dropdown-item " target="_blank" href="https://github.com/zikegcwk/aicamp_emotion">
+                                 <a class="dropdown-item " target="_blank" href="https://github.com/Peterb063/space-pythons">
                                     Github Repo
                                 </a>
-                                <a class="dropdown-item " target="_blank" href="https://medium.com/@beatrice.miha/i-learned-how-to-learn-dive-into-the-deepest-ocean-3add9449eb7e">
-                                    Beatrice's Post
-                                </a> 
-                                <a class="dropdown-item " target="_blank" href="https://medium.com/@thomaschen395/how-ai-camp-prepared-me-for-the-real-world-7f2a8c28cde5">
-                                    Thomas's Post
-                                </a>
-                        </li>
+                               <a class="dropdown-item "></a>
+                          </div>
+
+                          </li>
                         <li class="nav-item ">
-                            <a href="/#home" class="nav-link colored-text">
-                                Home
+                            <a href="https://cocalc14.ai-camp.dev/de36e3ca-e864-4752-9301-53d2b1dcb074/port/12345/" class="nav-link">
+                              <FONT COLOR=" #90EE90"> HOME
+                              </FONT>
+
                             </a>
                         </li>
-                        <li class="nav-item ">
-                            <a href="/#demo" class="nav-link colored-text">
-                                Demo
+                   <li class="nav-item ">
+                            <a href="https://cocalc14.ai-camp.dev/de36e3ca-e864-4752-9301-53d2b1dcb074/port/12345/#our_journey" class="nav-link">
+                              <FONT COLOR=" #90EE90"> OUR JOURNEY
+                              </FONT>
+
                             </a>
                         </li>
+                   
+
                         <li class="nav-item ">
-                            <a href="/#meet_the_team" class="nav-link colored-text">
-                                The Team
+                            <a href="https://cocalc14.ai-camp.dev/de36e3ca-e864-4752-9301-53d2b1dcb074/port/12345/#meet_the_team" class="nav-link" > 
+                               <FONT COLOR=" #90EE90"> THE TEAM
+                              </FONT> <!-- Name of the link-->
                             </a>
                         </li>
-                        <li class="nav-item ">
-                            <a href="/#our_work" class="nav-link colored-text">
-                                Our Work
-                            </a>
-                        </li>
+
                     </ul>
                 <ul class="ml-lg-auto list-unstyled m-0 nav-btn">
-                    <li><a href="https://michaelzhang1.typeform.com/to/LWIfVW1H?typeform-source=www.ai-camp.org" target="_blank" class="btn btn-green btn-circled btn-two">Register for AI Camp</a></li>
+                    <li><a href="#"   target="_blank" class="btn btn-green btn-circled btn-two" > <i class="fas fa-camera pr-2 left" aria-hidden="true"></i>Upload an Image </a> </li> 
                 </ul>
             </div> <!-- / .navbar-collapse -->
         </div> <!-- / .Container -->
     </nav>
+    
 
-    <section id="msg-box4-2" data-rv-view="2" style="background-color: rgb(255, 255, 255); margin-top: 8rem; padding-top: 3rem; padding-bottom: 0rem;">
-            <div class="container">  
+    <section class="banner-area py-5" id="banner-4" style="background-image: url(https://images.unsplash.com/photo-1552046122-03184de85e08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);z-index:2">
+            <section class="banner-area py-5" id="banner-4" >  
         <div class="row">
                 <div class="col justify-content-center align-items-center text-center">
-                    <h3 class="section-title display-4">Recognition Results</h3>
-                    <h3 class="we-found btn-text display-4">We found <strong><span style='text-transform: capitalize;'>{{labels}}!</span></strong></h3>
+                    <h1  style="color:white;font-size:40px"><br/><br/><br/><br/><b>Recognition Results</h1></b>
+                  <br/>  
+                  <i><h3  style="color:white;font-family:serif">We found <strong><span style='text-transform: capitalize;color:white'>{{labels}}!</span></strong></h3></i>
 
-                    {% if labels == 'no emotion' %}
+                    {% if labels == 'no infection' %}
                     <div>We missed? See why below.</div>
                     {% else %}
-                    <div class="lead"><em>with {{ confidences }} confidence.</em></div>
+                    
                     {% endif %}
 
                     <a class="mb-0" id='seefood_button'>
-                        <form action="/" id='seefood_form' method=post enctype=multipart/form-data>
+                        <form id='seefood_form' method=post enctype=multipart/form-data>
                             <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
                         </form>
-                        <button href="#" target="_blank" class="btn btn-white btn-circled btn-results btn-text">
-                            <i class="fas fa-camera pr-2 left" aria-hidden="true"></i> Next Photo
+                      <br/>
+                        <button href="#" target="_blank" class="btn btn-white btn-circled btn-text">
+                            <i class="fas fa-camera pr-2 left" aria-hidden="true"></i> NEXT IMAGE
                         </button>
+
                     </a>
                 </div>
-                <div class="col">
-                    <img class="mbr-figure" src="{{ url_for('static', filename='uploads/' + filename)}}">
+                <div class="col" style='padding-left:50px' >
+                  <br/><br/><br/><br/>
+                    <img  src="{{ url_for('static', filename='uploads/' + filename)}}" style="width: auto;height: 300px;border-radius:20px;border-style:solid;border-color:white">
+              <br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
-                </div>
-            </div>
-    </section>
 
-    <section class="mbr-section mbr-section-nopadding" id="services-2" data-rv-view="5" style="padding-top: 60px; margin-top: 60px; padding-bottom: 60px">
+                </div>
+              
+            </section>
+    </section>
+    
+
+    <section class="mbr-section mbr-section-nopadding" id="services-2" data-rv-view="5" style="padding-top: 0px; margin-top: 0px; padding-bottom: 60px">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 text-center">
                     <h3 class="section-title display-4 results-title">Why do we miss sometimes?</h3>
 
                     <div class="lead">
-                        <p class="section-text results-text">Given just three weeks, we only had time to train our model with 5 emotions on about 6.7k labeled data. If we have more time, we can improve our model performance!&nbsp;</p>
+                        <p class="section-text results-text">Given just three weeks, we only had time to train our model with four different types of skin conditions on about 1.2k labeled data. If we have more time, we can improve our model performance!&nbsp;</p>
                     </div>
 
                 </div>
                 <div class="col-sm-12 col-lg-6">
-                    <img class="mbr-figure-graph" src="{{ url_for('static', filename='images/clem-5-emo-ncm-671x690.jpg')}}">
+                    <img class="mbr-figure-graph" src="{{ url_for('static', filename='images1/confusion_matrix.png')}}">
                 </div>
             </div>
     </section>
@@ -128,7 +146,7 @@
                 <div class="col justify-content-center align-items-center text-center">  
                 <div class="footer-widget">
                         <!-- Brand -->
-                        <a href="#" class="footer-brand text-white">
+                       <!-- <a href="#" class="footer-brand text-white">
                             <h2 class="section-title section-text">AI Camp</h2>
                         </a>
                         <h1>Learn AI in three weeks with zero coding experience.</h1>
@@ -137,7 +155,7 @@
                             <a href="https://michaelzhang1.typeform.com/to/LWIfVW1H?typeform-source=www.ai-camp.org" target="_blank" margin-bottom="20px" class="btn btn-text btn-white btn-circled">
                                 Register for AI Camp
                             </a>
-                        </p>
+                        </p>-->
                 </div>
                 <div class="footer-widget footer-about">
                     <h3>About</h3>
@@ -196,10 +214,10 @@
                     <!-- Copyright -->
                     <p class="footer-copy ">
                         &copy; Copyright <span class="current-year">AI Camp</span> All rights reserved.
-                    </p>
-                </div>
+                    </p> 
+                </div> 
             </div> <!-- / .row -->
-        </div>
+        </div> 
     </footer>
 
     <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js')}}"></script>
